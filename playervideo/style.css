@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #273847;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+/*----------------------- Painel Princial -----------------------*/
+
+.main-painel {
+    grid-column: span 12;
+    display: flex;
+    align-items: center;
+    padding: 75px 40px;
+    margin: 0 auto;
+    border: 3px solid #13678A ;
+    border-radius: 20px;
+    width: 1400px;
+    height: 798px;
+    background-color: rgba(0, 0, 0, 0.575);
+    gap: 20px;
+}
+
+/*----------------------- Playlist Section -----------------------*/
+
+.playlist-section {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 604px;
+    background-color: #086788;
+    border-radius: 20px;
+}
+
+.head-playlist {
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    height: 44px;
+}
+
+.head-playlist h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.playlist-content {
+    display: flex;
+    justify-content: center;
+}
+
+.playlist-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.button-playlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #0808087e;
+    width: 230px;
+    height: 40px;
+}
+
+.playlist-list a {
+    padding: 5px 72px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+
+}
+
+/*----------------------- Vídeo Section -----------------------*/
+
+.video-section {
+    width: 692px;
+    height: 604px;
+    background-color: lightyellow;
+}
+
+.video-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 692px;
+    height: 486px;
+    border-radius: 20px;
+    background-color: #086788 ;
+}
+
+.video-title {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.info-title {
+    border-radius: 20px;
+    width: 692px;
+    height: 36px;
+    background-color: #8DB1AB;
+}
