@@ -105,18 +105,51 @@ body {
     align-items: center;
     width: 692px;
     height: 486px;
-    border-radius: 20px;
     background-color: #086788 ;
 }
 
 .video-title {
+    display: flex;
+    align-items: center;
     text-align: center;
-    margin-bottom: 26px;
+    height: 82px;
 }
 
 .info-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 20px;
     width: 692px;
     height: 36px;
     background-color: #8DB1AB;
+}
+
+.info-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 96px;
+    height: 22px;
+    font-size: 22px;
+}
+
+.autor-information {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#autor-link {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.video-review {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 110px;
+    height: 22px;
 }
