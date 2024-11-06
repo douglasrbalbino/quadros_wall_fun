@@ -14,6 +14,105 @@ body {
     background-color: #273847;
 }
 
+/*----------------------- Cabeçalho (Header) -----------------------*/
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1400px;
+    margin: 0 auto 50px;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu-btn {
+    grid-column: 1 / 3;
+    background-color: black;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    margin: 28px 55px
+}
+
+.menu-icon {
+    width: 100px;
+    position: relative;
+    bottom: 16px;
+    right: 16px;
+}
+
+.search-bar {
+    grid-column: 4 / 9;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.bg-search {
+    width: 650px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid #FFA630;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    margin-right: 33px;
+}
+
+.search-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-left: 17.35px;
+    cursor: pointer;
+    color: #FFA630;
+}
+
+.search-input {
+    all: unset;
+    background-color: black;
+    border: none;
+    width: 500px;
+    color: #FFA630;
+    font-size: 20px;
+}
+
+.button-header {
+    grid-column: 10 /13;
+    display: flex;
+}
+
+.search-input::placeholder {
+    color: #FFA630;
+}
+
+.user-button {
+    grid-column: 12/-1;
+    margin-top: 30px;
+}
+
+.user-page{
+    width: 67px;
+    height: 67px;
+    background-color: #FFA630;
+    border-radius: 50%;
+    border: 8px solid black;
+}
+
+/*----------------------- Conteúdo Princial (Main) -----------------------*/
+
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -88,7 +187,10 @@ body {
     font-weight: bold;
     font-size: 16px;
     color: white;
+}
 
+.button-playlist:hover {
+    background-color: #8DB1AB;
 }
 
 /*----------------------- Vídeo Section -----------------------*/
@@ -96,7 +198,6 @@ body {
 .video-section {
     width: 692px;
     height: 604px;
-    background-color: lightyellow;
 }
 
 .video-background {
@@ -113,6 +214,7 @@ body {
     align-items: center;
     text-align: center;
     height: 82px;
+    color: #8DB1AB ;
 }
 
 .info-title {
@@ -153,3 +255,86 @@ body {
     width: 110px;
     height: 22px;
 }
+
+/*----------------------- Comment Section -----------------------*/
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 290px;
+    height: 604px;
+    background-color: #086788;
+}
+
+.head-comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0 ;
+    width: 290px;
+    height: 54px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+}
+
+.foot-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 290px;
+    height: 68px;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.foot-comment input {
+    border-radius: 5px;
+    width: 212px;
+    height: 30px;
+}
+
+.foot-comment input::placeholder {
+    padding-left: 28px;
+    color: #086788;
+}
+
+.foot-comment button {
+    height: 46px;
+    width: 46px;
+    border: 0;
+    border-radius: 50%;
+    font-size: 26px;
+    background-color: black;
+}
+
+/*----------------------- Cabeçalho (Footer) -----------------------*/
+
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.links{
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: center;
+    gap: 220px;
+    padding-top: 30px;
+  }
+  
+  .links a{
+    color: #8DB1AB;
+  }
+  
+  .autores {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 25px 0;
+    font-size: 12px;
+  }
